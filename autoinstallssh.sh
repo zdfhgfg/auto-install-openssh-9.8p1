@@ -1,7 +1,5 @@
 #!/bin/bash
-#echo -e "\033[1;32mThis is green text\033[0m"
-#echo -e "\033[1;31mThis is red text\033[0m"
-#echo -e "\033[1;47mThis is red text\033[0m"
+
 #备份现有配置
 echo -e "\033[1;47m---备份现有配置---\033[0m"
 
@@ -44,9 +42,9 @@ yum -y install gcc pam-devel zlib-devel openssl-devel net-tools > /dev/null && e
 #下载源码包
 echo -e "\033[1;47m---下载源码包---\033[0m"
 cd /usr/local/src
-#wget https://www.zlib.net/zlib-1.3.1.tar.gz  && echo -e "\033[1;32m---zlib-1.3.1 下载成功---\033[0m" || echo -e "\033[1;31m---zlib-1.3.1 下载失败---\033[0m"
-#wget https://www.openssl.org/source/openssl-3.3.1.tar.gz && echo -e "\033[1;32m---openssl-3.3.1 下载成功---\033[0m" || echo -e "\033[1;31m---openssl-3.3.1 下载失败---\033[0m"
-#wget https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz && echo -e "\033[1;32m---openssh-9.8p1 下载成功---\033[0m" || echo -e "\033[1;31m---openssh-9.8p1 下载失败---\033[0m"
+wget https://www.zlib.net/zlib-1.3.1.tar.gz  && echo -e "\033[1;32m---zlib-1.3.1 下载成功---\033[0m" || echo -e "\033[1;31m---zlib-1.3.1 下载失败---\033[0m"
+wget https://www.openssl.org/source/openssl-3.3.1.tar.gz && echo -e "\033[1;32m---openssl-3.3.1 下载成功---\033[0m" || echo -e "\033[1;31m---openssl-3.3.1 下载失败---\033[0m"
+wget https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-9.8p1.tar.gz && echo -e "\033[1;32m---openssh-9.8p1 下载成功---\033[0m" || echo -e "\033[1;31m---openssh-9.8p1 下载失败---\033[0m"
 
 #解压源码包
 echo -e "\033[1;47m---解压源码包---\033[0m"
